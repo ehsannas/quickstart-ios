@@ -6,7 +6,12 @@ target 'FirestoreExample' do
   pod 'FirebaseAuth'
   pod 'FirebaseUI/Auth', '~> 11.0'
   pod 'FirebaseUI/Email', '~> 11.0'
-  pod 'FirebaseFirestore'
+
+  #pod 'FirebaseFirestore'
+  pod 'FirebaseFirestore', :path => '../../firebase-ios-sdk'
+
+  pod 'Firebase/AppCheck'
+
   pod 'FirebaseFirestoreSwift', "> 7.0-beta"
   pod 'SDWebImage'
 
@@ -19,7 +24,8 @@ target 'FirestoreSwiftUIExample' do
   use_frameworks!
 
   pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
+  #pod 'FirebaseFirestore'
+  pod 'FirebaseFirestore', :path => '../../firebase-ios-sdk'
   pod 'FirebaseFirestoreSwift', "> 7.0-beta"
   pod 'SDWebImageSwiftUI'
 end
